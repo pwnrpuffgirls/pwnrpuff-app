@@ -1,5 +1,6 @@
 <template>
-  <div class="hello">
+  <div class="home">
+    <!-- Issie This class has a margin-->
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -32,7 +33,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   props: {
     msg: String
   }
@@ -41,6 +42,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.home {
+  margin-top: 100px;
+}
 h3 {
   margin: 40px 0 0;
 }
