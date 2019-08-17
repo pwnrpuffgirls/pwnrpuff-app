@@ -9,6 +9,7 @@
 
     <v-content>
       <Home/>
+      <Pwnrs/>
     </v-content>
   </v-app>
 </template>
@@ -16,12 +17,14 @@
 <script>
 import Menu from './components/Menu';
 import Home from './views/Home';
+import Pwnrs from './views/Pwnrs';
 
 export default {
   name: 'App',
   components: {
     Menu,
-    Home
+    Home,
+    Pwnrs
   },
   data: () => ({
     //
