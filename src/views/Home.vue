@@ -2,12 +2,12 @@
   <div class="home">
     <h1>Pwnrpuff girls</h1>
     <p class="under-construction">
-      This web page and project is very much under constructions^_^
-      You should look forward to awesome future changes!
+      This web page and project is very much under constructions^_^ You should
+      look forward to awesome future changes!
     </p>
     <p>
-      This is a project for infosec females and non-binary people.
-      We refer to ourselves as <b>pwners</b>, or <b>pwnrs</b>.
+      This is a project for infosec females and non-binary people. We refer to
+      ourselves as <b>pwners</b>, or <b>pwnrs</b>.
     </p>
     <p>
       A pwner is a person doing pwning. Pwn comes from the word "own".
@@ -30,19 +30,34 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+<<<<<<< HEAD
 .home {
   margin-right: auto;
   margin-left: auto;
   width: 50%;
+=======
+
+  .home {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+
+@media only screen and (max-width: 850px) {
+  .home {
+    width: 90%;
+  }
+>>>>>>> Change width based on screen size
 }
 h1 {
   max-width: 400px;
