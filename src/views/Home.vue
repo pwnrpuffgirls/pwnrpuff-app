@@ -1,33 +1,31 @@
 <template>
   <div class="home">
-    <!-- Issie This class has a margin-->
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+    <!-- Issue: This class has a margin-->
+    <h1>Pwnrpuff girls</h1>
+    <p class="under-construction">
+      This web page and project is very much under constructions^_^
+      You should look forward to awesome future changes!
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <p>
+      This is a project for infosec females and non-binary people.
+      We refer to ourselves as <b>pwners</b>, or <b>pwnrs</b>.
+    </p>
+    <p>
+      A pwnr is a person doing pwning. Pwn comes from the word "own".
+      When you hack someting, you pwn it. Hence, you are a pwnr.
+    </p>
+    <p>
+      Now, we call us pwnrs because we like hacking and security.
+      However.. We've noticed a lack of technical women in the security domain!
+      This project is to gather technical infosec women,
+      and allow any infosec others to join our community.
+      Also, the ones who would like may make their own page by contributing
+      to this project.
+    </p>
+    <p>
+      If you would like to contribute, we will open source the project as soon
+      as we have made routines for contributions.
+    </p>
   </div>
 </template>
 
@@ -44,17 +42,20 @@ export default {
 <style scoped>
 .home {
   margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
 }
-h3 {
-  margin: 40px 0 0;
+h1 {
+  max-width: 400px;
+  margin: auto;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.under-construction {
+  color: darkolivegreen;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+p {
+  max-width: 400px;
+  margin: auto;
 }
 a {
   color: #42b983;
