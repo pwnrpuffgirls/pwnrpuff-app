@@ -1,16 +1,21 @@
 <template>
     <header v-vue-scrollup-menu class="header">
         <div>Lololol</div>
+        <NavigationBar/>
     </header>
 </template>
 
 <script>
     import vueScrollupMenu from 'vue-scrollup-menu'
+    import NavigationBar from './NavigationBar.vue'
 
     export default {
-        name: "Menu",
+        name: "SemiStickyHeader",
         directives: {
             vueScrollupMenu
+        },
+        components: {
+            NavigationBar
         }
     }
 </script>
