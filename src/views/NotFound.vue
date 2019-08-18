@@ -2,9 +2,9 @@
     <v-container grid-list-md>
         <v-layout row wrap justify-center>
             <v-flex xs6>
-                <v-card>
+                <v-card class="card-width" justify-center>
                     <v-card-title
-                            class="grapefruit darken-1 white--text subheading"
+                            class="grapefruit white--text subheading"
                             primary-title
                     >
                         <span class="title">Oh noes!</span>
@@ -19,7 +19,7 @@
                         </p>
                     </v-card-text>
                     <v-card-actions class="justify-center">
-                        <v-btn flat class="grapefruit white--text" to="/">Home</v-btn>
+                        <v-btn flat class="grapefruit white--text" to="/">Bring me home</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-flex>
@@ -28,7 +28,12 @@
 </template>
 
 <style>
-.grapefruit {
-    backround-color: #ec5564;
-}
+    .grapefruit {
+        backround-color: #ec5564;
+    }
+
+    .card-width {
+        max-width: 400px;
+        margin: auto;
+    }
 </style>

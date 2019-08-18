@@ -37,7 +37,7 @@
         active: false,
         isOpen: false,
         navList: [
-          { url: '#', name: 'Home' },
+          { url: '/', name: 'Home' },
 
           {
             url: '#',
