@@ -37,7 +37,7 @@
         active: false,
         isOpen: false,
         navList: [
-          { url: '#', name: 'Home' },
+          { url: '/', name: 'Home' },
 
           {
             url: '#',
@@ -71,14 +71,21 @@
 <style scoped>
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+      list-style-type: none;
+      margin: auto;
+      max-width: 50%;
+      padding: 0;
+      overflow: hidden;
+  }
+
+  @media only screen and (max-width: 850px) {
+      ul {
+          max-width: 90%;
+      }
   }
 
   li {
-    float: left;
+      float: left;
   }
 
   li a,
