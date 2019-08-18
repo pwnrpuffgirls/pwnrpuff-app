@@ -8,28 +8,29 @@
       background: linear-gradient(70deg, #ec5564 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #73b1f4 60%);
       ">
     <SemiStickyHeader/>
-
-    <v-content>
-      <Home/>
+    <v-content class="content">
+      <router-view/>
     </v-content>
   </v-app>
 
 </template>
 
 <script>
-
   import SemiStickyHeader from './components/SemiStickyHeader'
-  import Home from './views/Home'
 
   export default {
     name: 'App',
     components: {
       SemiStickyHeader,
-      Home
     },
     data: () => ({
       //
     })
   }
-
 </script>
+
+<style>
+  .content {
+    margin-top: 120px;
+  }
+</style>

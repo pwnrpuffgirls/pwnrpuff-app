@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <!-- Issue: This class has a margin-->
     <h1>Pwnrpuff girls</h1>
     <p class="under-construction">
       This web page and project is very much under constructions^_^
@@ -11,11 +10,11 @@
       We refer to ourselves as <b>pwners</b>, or <b>pwnrs</b>.
     </p>
     <p>
-      A pwnr is a person doing pwning. Pwn comes from the word "own".
-      When you hack someting, you pwn it. Hence, you are a pwnr.
+      A pwner is a person doing pwning. Pwn comes from the word "own".
+      When you hack something, you pwn it. Hence, you are a pwner.
     </p>
     <p>
-      Now, we call us pwnrs because we like hacking and security.
+      Now, we call us pwners because we like hacking and security.
       However.. We've noticed a lack of technical women in the security domain!
       This project is to gather technical infosec women,
       and allow any infosec others to join our community.
@@ -41,7 +40,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home {
-  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
   width: 50%;
