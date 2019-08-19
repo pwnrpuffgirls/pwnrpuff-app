@@ -33,18 +33,18 @@ export default {
     return {
       pwnrs: [
         {
-          name: "PowerPuff",
-          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          name: "Marit",
+          filename: "marit.png",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff 2",
-          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          name: "Ingeborg",
+          filename: "ingeborg.jpg",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff 3",
-          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          name: "Ina",
+          filename: "Ina.jpg",
           url: "/powerpuff" 
         },
         {
@@ -83,9 +83,11 @@ export default {
 
 .gallery-panel {
   background-color: white;
+  width: 80%;
+  border-radius: 0.75rem;
   img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 80%;
     object-fit: cover;
     border-radius: 0.75rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
