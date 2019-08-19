@@ -8,7 +8,7 @@
 export default {
   props: {
     name: String,
-    picture: String,
+    filename: String,
     url: String
   },
   data() {
@@ -16,21 +16,14 @@ export default {
       verbose: this.name
     };
   },
-  methods: {
-    sendData() {
-      this.updateData(this.name, this.verbose);
-    },
-  }
 }
 </script>
 
 <style lang="scss" scoped>
 .pwnr {
-  display: flex;
-  align-items: center;
   img {
-    height: 30px;
-    align-self: flex-end;
+    max-width: 50px;
+    max-height: 50px;
   }
 }
 </style>

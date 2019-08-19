@@ -1,42 +1,65 @@
 <template>
-  <div class="wrapper">
-    <div class="container">
-      <h2>PWNRS</h2>
-      <pwnr
-        v-for="(field, index) in fields"
-        ref="fields"
-        :key="index"
-        :name="field.name"
-        :picture="field.picture"
-        :url="field.url"
-      />
+  <div class="gallery">
+    <div class="gallery-panel"
+      v-for="pwnr in pwnrs"
+      :key="pwnr"
+      :name="pwnr.name"
+      :picture="pwnr.filename"
+      :url="pwnr.url"
+    >
+      <router-link :to="`/photo/${pwnr.name}`">
+      <img :src="thumbUrl(pwnr.filename)">
+      </router-link>
+      <div class="container">
+        <p>{{pwnr.name}}</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import powerpuff from "@/assets/pwnr-pics/the_4th_powerpuff_girl_no_one_asked_for.png";
-import Pwnr from "@/components/Pwnr.vue";
+import Pwnr from '@/components/Pwnr.vue';
+
 export default {
   components: {
     Pwnr
   },
+  methods: {
+    thumbUrl(filename) {
+      return require(`../assets/pwnr-pics/${filename}`);
+    }
+  },
   data() {
     return {
-      fields: [
+      pwnrs: [
         {
           name: "PowerPuff",
-          picture: powerpuff,
+          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
           name: "PowerPuff2",
-          picture: powerpuff,
+          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
           name: "PowerPuff3",
-          picture: powerpuff,
+          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          url: "/powerpuff" 
+        },
+        {
+          name: "PowerPuff2",
+          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          url: "/powerpuff" 
+        },
+        {
+          name: "PowerPuff2",
+          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          url: "/powerpuff" 
+        },
+        {
+          name: "PowerPuff2",
+          filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
       ],
@@ -47,22 +70,31 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.home {
-  margin-top: 100px;
+<style lang="scss" scoped>
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 80rem;
+  margin: 5rem auto;
+  padding: 0 5rem;
 }
-h3 {
-  margin: 40px 0 0;
+
+.gallery-panel {
+  background-color: white;
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  .container {
+    text-align: center;
+    padding: 10px 20px;
+  }
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

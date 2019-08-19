@@ -21,12 +21,14 @@
 
   import SemiStickyHeader from './components/SemiStickyHeader'
   import Home from './views/Home'
+  import Pwnrs from './views/Pwnrs'
 
   export default {
     name: 'App',
     components: {
       SemiStickyHeader,
-      Home
+      Home,
+      Pwnrs
     },
     data: () => ({
       //
