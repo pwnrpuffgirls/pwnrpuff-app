@@ -38,27 +38,27 @@ export default {
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff2",
+          name: "PowerPuff 2",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff3",
+          name: "PowerPuff 3",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff2",
+          name: "PowerPuff 4",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff2",
+          name: "PowerPuff 5",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff2",
+          name: "PowerPuff 6",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
@@ -94,6 +94,9 @@ export default {
   .container {
     text-align: center;
     padding: 10px 20px;
+    p {
+      color: black;
+    }
   }
 }
 
