@@ -1,14 +1,19 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
-import light from '../themes/light';
+import 'vuetify/dist/vuetify.min.css'
+import dark from '../themes/theme';
 
 Vue.use(Vuetify);
 
+/* This is following the "A-la-carte installation"
+*  section from the following Vue documentation:
+*  https://vuetifyjs.com/en/getting-started/quick-start*/
 export default new Vuetify({
   icons: {
     iconfont: 'mdi',
   },
   theme: {
-    themes: { light },
+    dark: true,
+    themes: { dark },
   }
 });
