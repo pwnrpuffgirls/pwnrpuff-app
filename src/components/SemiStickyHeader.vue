@@ -1,6 +1,5 @@
 <template>
     <header v-vue-scrollup-menu class="header">
-        <div>Lololol</div>
         <NavigationBar/>
     </header>
 </template>
@@ -22,8 +21,9 @@
 
 <style scoped>
     .header {
-        background-color: rgba(0, 0, 0, .4);
-        height: 90px;
+        background-color: #b4e080;
+        padding-top: 10px;
+        height: 70px;
         width: 100%;
 
         overflow: auto;
