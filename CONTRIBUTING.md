@@ -15,7 +15,7 @@ $ git pull
 3. Now, make a new branch. Prefix your branch with the number of the issue you
 are working on:
 ```
-$ git checkout -b <issue-number><branch-name>
+$ git checkout -b <issue-number>-<branch-name>
 ```
 
 4. Do your implementation. Remember to make each branch contain as little new
