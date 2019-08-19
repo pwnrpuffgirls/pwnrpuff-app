@@ -7,7 +7,7 @@
       :picture="pwnr.filename"
       :url="pwnr.url"
     >
-      <router-link :to="`/photo/${pwnr.name}`">
+      <router-link :to="`pwnrs/${pwnr.name}`">
       <img :src="thumbUrl(pwnr.filename)">
       </router-link>
       <div class="container">
@@ -48,17 +48,17 @@ export default {
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff 4",
+          name: "PowerPuff 1",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff 5",
+          name: "PowerPuff 2",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
         {
-          name: "PowerPuff 6",
+          name: "PowerPuff 3",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
           url: "/powerpuff" 
         },
@@ -92,12 +92,18 @@ export default {
     border-radius: 0.75rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
+    &:hover{
+      box-shadow: 0 8px 12px 0 rgba(1, 0, 0, 0.8), 0 10px 30px 0 rgba(1, 0, 0, 0.8);
+    }
   }
   .container {
     text-align: center;
     padding: 10px 20px;
     p {
       color: black;
+      &:hover{
+        color: green;
+      }
     }
   }
 }
