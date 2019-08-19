@@ -39,15 +39,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-<<<<<<< HEAD
-.home {
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
-=======
-
   .home {
-    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
     width: 50%;
@@ -57,7 +49,6 @@ export default {
   .home {
     width: 90%;
   }
->>>>>>> Change width based on screen size
 }
 h1 {
   max-width: 400px;
@@ -67,8 +58,9 @@ h1 {
   color: darkolivegreen;
 }
 p {
-  max-width: 400px;
-  margin: auto;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 25px;
 }
 a {
   color: #42b983;
