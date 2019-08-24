@@ -3,7 +3,11 @@ import Router from "vue-router"
 import Home from "./views/Home"
 import NotFound from "./views/NotFound"
 import Pwnrs from "./views/Pwnrs"
-import Ina from "./views/Ina"
+
+/* Pwners */
+import Ingeborg from './views/Pwnrs/Ingeborg'
+import Ina from './views/Pwnrs/Ina'
+import Marit from './views/Pwnrs/Marit'
 
 Vue.use(Router)
 
@@ -21,12 +25,24 @@ export default new Router({
             name: "pwnrs",
             component: Pwnrs
         },
+        { path: "/404", component: NotFound },
+        { path: "*", redirect: "/404" },
+
+        /* Pwners */
         {
             path: "/pwnrs/ina",
             name: "ina",
             component: Ina
         },
-        { path: "/404", component: NotFound },
-        { path: "*", redirect: "/404" }
+        {
+            path: "/pwnrs/ingeborg",
+            name: "ingeborg",
+            component: Ingeborg
+        },
+        {
+            path: "/pwnrs/marit",
+            name: "marit",
+            component: Marit
+        },
     ]
 })
