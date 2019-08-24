@@ -1,6 +1,6 @@
 <template>
 
-  <v-app dark>
+  <v-app dark class="page">
     <SemiStickyHeader/>
     <v-content class="content">
       <router-view/>
@@ -26,5 +26,20 @@
 <style>
   .content {
     margin-top: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 800px) and (min-width: 600px){
+    .content {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .content {
+      width: 90%;
+    }
   }
 </style>
