@@ -40,7 +40,7 @@
           { url: '/', name: 'Home' },
 
           {
-            url: '#',
+            url: '/pwnrs',
             name: 'Pwnrpuff Girls',
             children: [
               {
