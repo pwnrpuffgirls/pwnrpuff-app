@@ -3,16 +3,10 @@
     <div class="gallery-panel"
       v-for="pwnr in pwnrs"
       :key="pwnr"
-      :name="pwnr.name"
-      :picture="pwnr.filename"
-      :url="pwnr.url"
     >
       <router-link :to="`pwnrs/${pwnr.name}`">
-      <img :src="thumbUrl(pwnr.filename)">
+      <img :src="thumbUrl(pwnr.filename)" url="`pwnrs/${pwnr.name}`">
       </router-link>
-      <div class="container">
-        <p>{{pwnr.name}}</p>
-      </div>
     </div>
   </div>
 </template>
@@ -73,38 +67,30 @@ export default {
 <style lang="scss" scoped>
 
 .gallery {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-gap: 1rem;
   max-width: 80rem;
-  margin: 5rem auto;
   padding: 0 5rem;
 }
 
 .gallery-panel {
-  background-color: white;
-  width: 80%;
-  border-radius: 0.75rem;
+  width: 30%;
+  border: 1px;
+  border-color: white;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+
+  &:hover{
+      border-color: black;
+  }
+
   img {
+    background-color: white;
     width: 100%;
     height: 80%;
     object-fit: cover;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-    &:hover{
-      box-shadow: 0 8px 12px 0 rgba(1, 0, 0, 0.8), 0 10px 30px 0 rgba(1, 0, 0, 0.8);
-    }
-  }
-  .container {
-    text-align: center;
-    padding: 10px 20px;
-    p {
-      color: black;
-      &:hover{
-        color: green;
-      }
-    }
   }
 }
 
