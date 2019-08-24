@@ -21,7 +21,7 @@
 
 <style scoped>
     .header {
-        background-color: #b4e080;
+        background-color: #5de3da96;
         padding-top: 10px;
         height: 70px;
         width: 100%;
