@@ -4,7 +4,7 @@
       <a class="hexIn" :href="`pwnrs/${pwnr.name}`">
         <img :src="thumbUrl(pwnr.filename)" alt="" />
         <h1>{{ pwnr.name }}</h1>
-        <p>test test test</p>
+        <p>{{ pwnr.description }}</p>
       </a>
     </li>
   </ul>
@@ -24,31 +24,37 @@ export default {
         {
           name: "Marit",
           filename: "marit.png",
+          description: "Secure coder",
           url: "/powerpuff"
         },
         {
           name: "Ingeborg",
           filename: "ingeborg.jpg",
+          description: "Pwn boss",
           url: "/powerpuff"
         },
         {
           name: "Ina",
           filename: "Ina.jpg",
+          description: "Mobile pwner",
           url: "/powerpuff"
         },
         {
           name: "PowerPuff 1",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          description: "Pwnr puff",
           url: "/powerpuff"
         },
         {
           name: "PowerPuff 2",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          description: "Pwnr puff",
           url: "/powerpuff"
         },
         {
           name: "PowerPuff 3",
           filename: "the_4th_powerpuff_girl_no_one_asked_for.png",
+          description: "Pwnr puff",
           url: "/powerpuff"
         }
       ],
