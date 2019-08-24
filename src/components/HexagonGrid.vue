@@ -23,7 +23,7 @@ export default {
       pwnrs: [
         {
           name: "Marit",
-          filename: "marit.png",
+          filename: "marit.jpg",
           description: "Secure coder",
           url: "/powerpuff"
         },
