@@ -39,17 +39,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .home {
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-  }
-
-@media only screen and (max-width: 850px) {
-  .home {
-    width: 90%;
-  }
-}
 h1 {
   max-width: 400px;
   margin: auto;

@@ -1,8 +1,9 @@
 import Vue from "vue"
 import Router from "vue-router"
 import Home from "./views/Home"
-import NotFound from "./views/NotFound"
+import Contact from "./views/Contact"
 import Pwnrs from "./views/Pwnrs"
+import NotFound from "./views/NotFound"
 import Ina from "./views/Ina"
 
 Vue.use(Router)
@@ -20,6 +21,11 @@ export default new Router({
             path: "/pwnrs",
             name: "pwnrs",
             component: Pwnrs
+        },
+        {
+            path: "/contact",
+            name: "contact",
+            component: Contact
         },
         {
             path: "/pwnrs/ina",
