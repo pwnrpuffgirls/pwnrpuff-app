@@ -1,6 +1,6 @@
 <template>
   <ul id="navigation">
-    <li v-for="item in navList">
+    <li v-for="item in navList" v-bind:key="item.name">
       <template v-if="item.children">
         <a
           :href="item.url"
