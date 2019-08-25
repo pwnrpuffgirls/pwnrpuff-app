@@ -13,8 +13,8 @@
     <p class="quote">
       "<b>Det verste med å være kvinne i tech, er å bli spurt om hvordan det er å
       være kvinne i tech."</b><br> Da er det jo implisitt forskjellen fra hvordan det er
-      å være mann, eller opplevelser som kvinner i tech opplever det blir
-      spurt om. Forskjeller er som regel ikke kule. Hvorfor ikke spørre om hvordan
+      å være mann, eller opplevelser som kvinner i tech har det blir spurt om.
+      Forskjeller som dette er som regel ikke kule. Hvorfor ikke spørre om hvordan
       det er å jobbe i tech-bransjen?
       Spørre om alle de kule tech-tingene? Slik dere spør kompisene mine. Tenk
       på det.
