@@ -18,11 +18,8 @@
 </template>
 
 <script>
-import Pwnr from '@/components/Pwnr.vue';
-
 export default {
   components: {
-    Pwnr
   },
   methods: {
     thumbUrl(filename) {
