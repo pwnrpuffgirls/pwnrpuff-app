@@ -1,7 +1,7 @@
 import Vue from "vue"
 import Router from "vue-router"
 import Home from "./views/Home"
-import NotFound from "./views/NotFound"
+import Contact from "./views/Contact"
 import Pwnrs from "./views/Pwnrs"
 
 /* Pwners */
@@ -29,6 +29,11 @@ export default new Router({
         { path: "*", redirect: "/404" },
 
         /* Pwners */
+        {
+            path: "/contact",
+            name: "contact",
+            component: Contact
+        },
         {
             path: "/pwnrs/ina",
             name: "ina",
