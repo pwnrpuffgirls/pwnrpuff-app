@@ -3,6 +3,7 @@ import Router from "vue-router"
 import Home from "./views/Home"
 import Contact from "./views/Contact"
 import Pwnrs from "./views/Pwnrs"
+import NotFound from "./views/NotFound"
 
 /* Pwners */
 import Ingeborg from './views/Pwnrs/Ingeborg'
