@@ -23,7 +23,7 @@ h1 {
   margin: auto;
 }
 .under-construction {
-  color: darkolivegreen;
+  color: cadetblue;
 }
 p {
     max-width: 400px;
