@@ -5,6 +5,7 @@ module.exports = {
             use: [
                 'vue-style-loader',
                 'css-loader',
+                'style-loader',
                 {
                     loader: 'sass-loader',
                     options: {

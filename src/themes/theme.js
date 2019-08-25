@@ -1,5 +1,5 @@
 export default {
-    primary: "#b4e080",
+    primary: "#fcd277",
     secondary: "#fcd277",
     sunflower: "#fcd277", // Sunflower #fecd57 #f5ba45
     bluejeans: "#73b1f4", // blue jeans #5e9cea #4b89da
