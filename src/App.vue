@@ -1,45 +1,48 @@
 <template>
+	<VApp>
+		<v-app-bar
+			app
+			color="primary"
+			dark
+		>
+			<div class="d-flex align-center">
+				<v-img
+					alt="Heart picture"
+					class="shrink mr-2"
+					contain
+					src="./assets/pictures/small_heart.png"
+					transition="scale-transition"
+					width="40"
+				/>
 
-  <v-app dark class="page">
-    <SemiStickyHeader/>
-    <v-content class="content">
-      <router-view/>
-    </v-content>
-  </v-app>
+				<h1>Pwnrpuff</h1>
+			</div>
 
+			<v-spacer></v-spacer>
+
+			<!---<v-btn
+				href="https://github.com/vuetifyjs/vuetify/releases/latest"
+				target="_blank"
+				text
+			>
+				<span class="mr-2">Latest Release</span>
+				<v-icon>mdi-open-in-new</v-icon>
+			</v-btn>--->
+		</v-app-bar>
+
+		<VMain>
+			<router-view/>
+		</VMain>
+	</VApp>
 </template>
 
 <script>
-  import SemiStickyHeader from './components/SemiStickyHeader'
 
-  export default {
-    name: 'App',
-    components: {
-      SemiStickyHeader,
-    },
-    data: () => ({
-      //
-    })
-  }
+export default {
+	name: 'App',
+
+	data: () => ({
+		//
+	}),
+};
 </script>
-
-<style>
-  .content {
-    margin-top: 120px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-  }
-
-  @media only screen and (max-width: 800px) and (min-width: 600px){
-    .content {
-      width: 70%;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .content {
-      width: 90%;
-    }
-  }
-</style>

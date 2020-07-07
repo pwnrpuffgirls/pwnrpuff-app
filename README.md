@@ -1,34 +1,21 @@
-# pwnrpuff-app
+# pwnrpuff
 
-## Project setup
-```
-yarn install
-```
+## Useful commands
+* Project setup: `npm install`
+* Compiles and hot-reloads for development: `npm run serve` 
+* Compiles and minifies for production: `npm run build`
+* Run your tests: `npm run test`
+* Lints and fixes files: `npm run lint`
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Read about dependencies
+* [Vue Loader](https://vue-loader.vuejs.org/#what-is-vue-loader)
+* [Vue Awesome](https://github.com/vuejs/awesome-vue)
+* [Vue Router](https://router.vuejs.org/)
+* [Vuex](https://vuex.vuejs.org/)
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Advices
+* Download and use [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools)
+* 
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Colors
-```
-sunflower:  "#fcd277", // Sunflower #fecd57 #f5ba45
-bluejeans:  "#73b1f4", // blue jeans #5e9cea #4b89da
-grass:      "#b4e080", // grass #9ed36a #8aco54
-grapefruit: "#ec5564" // grapefruit #f76d82 #ec5564 #d94452
-```
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

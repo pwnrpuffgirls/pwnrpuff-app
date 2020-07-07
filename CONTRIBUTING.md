@@ -25,9 +25,9 @@ $ git checkout -b <issue-number>-<branch-name>
 
 ```
 $ git add <files>
-$ git commit -m "Add awesome functionality."
+$ git commit -m "Add awesome functionality"
 $ git add <other files>
-$ git commit -m "Remove dirty code."
+$ git commit -m "Remove dirty code"
 $ git push
 ```
 
