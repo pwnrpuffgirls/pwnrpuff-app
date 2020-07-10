@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <p class="under-construction">
-      This web page and project is very much under constructions^_^ You should
-      look forward to awesome future changes!
+      This web page and project is very much under constructions^_^
     </p>
     <p>
       This is a project for infosec females and non-binary people. We refer to
