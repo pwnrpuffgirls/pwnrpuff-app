@@ -1,15 +1,11 @@
 <template>
   <div class="home">
-    <h1>Pwnrpuff girls</h1>
     <p class="under-construction">
-      This web page and project is very much under constructions^_^ You should
-      look forward to awesome future changes!
+      This web page and project is very much under constructions^_^
     </p>
     <p>
       This is a project for infosec females and non-binary people. We refer to
       ourselves as <b>pwners</b>, or <b>pwnrs</b>.
-    </p>
-    <p>
       A pwner is a person doing pwning. Pwn comes from the word "own".
       When you hack something, you pwn it. Hence, you are a pwner.
     </p>
@@ -36,18 +32,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  max-width: 400px;
-  margin: auto;
+.home {
+	margin-top: 5rem;
+	margin-right: 15px;
+	margin-left: 15px;
 }
+
 .under-construction {
   color: cadetblue;
 }
+
 p {
-    max-width: 400px;
+    max-width: 650px;
     margin: auto;
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
+
 a {
   color: #42b983;
 }

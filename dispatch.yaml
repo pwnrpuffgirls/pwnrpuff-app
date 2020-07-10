@@ -1,0 +1,4 @@
+dispatch: 
+  # Send test URL to the test environment
+  - url: "*/test.pwnrpuffgirls.no/*"
+    service: test-environment
